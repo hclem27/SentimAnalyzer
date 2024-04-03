@@ -1,6 +1,7 @@
 # SentimAnalyzer
 Cette application sera capable de déterminer si un texte donné exprime un sentiment positif, négatif, ou neutre. Cette application sera accessible via une API REST ful
 L'application sera développer en Python.
+Cahier des charges en cours de développement : https://docs.google.com/document/d/1IkzfWqW1CCXu8EIhplonDHtXZDBsaSIj1wvPkeqJ5uQ/edit
 
 
 # Intruction 
