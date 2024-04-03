@@ -57,3 +57,15 @@ Renovatebot est un bot qui tourne une fois par jour et qui fait le tour des pack
 Sonarcube va lire le code statique et faire des remontées sur les fails / améliorations de code ... 
 Il est lié au CI et commente automatiques les PR 
 
+
+# Deployment 
+- pour redis + app
+cmd -> docker compose up -d
+- pour l'app
+cmd -> docker build .
+
+deployer sur kubernetes : 
+-> docker build -f Dockerfile -t sentimanalyzer:latest . 
+-> docker run -p 5001:5000 sentimanalyzer
+-> kubectl apply -f deployment.yaml  
+

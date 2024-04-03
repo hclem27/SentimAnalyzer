@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentimanalyzer
+spec:
+  selector:
+    matchLabels:
+      app: sentimanalyzer
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: sentimanalyzer
+    spec:
+      containers:
+      - name: sentimanalyzer
+        image: sentimanalyzer:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
